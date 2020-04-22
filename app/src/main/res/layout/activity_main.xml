@@ -20,8 +20,7 @@
         android:id="@+id/list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:choiceMode="multipleChoice">
+        android:layout_weight="1">
 
     </ListView>
 
@@ -34,7 +33,10 @@
             android:id = "@+id/text"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:inputType="text"
+            android:autofillHints=""
+            tools:ignore="LabelFor" />
 
         <Button
             android:id="@+id/button"
