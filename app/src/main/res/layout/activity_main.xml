@@ -1,51 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/design_default_color_primary"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <Button
         android:id="@+id/settings"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/design_default_color_primary_dark"
         android:text="settings"
-        android:onClick="settingsButton"
+        android:textColor="@color/colorAccent"
         tools:ignore="HardcodedText" />
 
 
     <ListView
-        android:id="@+id/list"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1">
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@color/design_default_color_primary_dark"
+        android:choiceMode="multipleChoice"
+        android:textColor="@color/colorAccent">
 
     </ListView>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/design_default_color_primary"
         android:orientation="vertical">
 
         <EditText
-            android:id = "@+id/text"
+            android:id="@+id/text"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:inputType="text"
             android:autofillHints=""
+            android:background="@color/design_default_color_primary_dark"
+            android:inputType="text"
+            android:textColor="@color/colorAccent"
             tools:ignore="LabelFor" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/add"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textAlignment="center"
+            android:background="@color/design_default_color_primary_dark"
             android:text="@string/add"
-            android:onClick="addButton"/>
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent" />
     </LinearLayout>
 
-
-</androidx.appcompat.widget.LinearLayoutCompat>
+</LinearLayout>
