@@ -25,8 +25,6 @@ public class SettingsActivity extends AppCompatActivity {
                 if (button % 2 == 0) {
                     buttonColor.setBackgroundColor(Color.parseColor("#000000")); //Changing the color of buttons but seems like a long way to do it-- can I change the color reference in colors.xml instead? that would save me changing every button
                     buttonColor.setTextColor(Color.parseColor("#FFFFFF"));
-                    mainActivity.add.setBackgroundColor(Color.parseColor("#FFFFFF"));
-
                 } else {
                     buttonColor.setBackgroundColor(Color.parseColor("#FFFFFF"));
                     buttonColor.setTextColor(Color.parseColor("#000000"));
